@@ -31,7 +31,7 @@ export default function Experience() {
             />
 
             <ExperienceItem
-              title="Worked of Web Development Project"
+              title="Worked on Web Development Projects"
               company="Self-Directed Projects"
               location="Remote"
               period="2023 - 2024"
