@@ -10,7 +10,7 @@ export default function Footer() {
         <div className="flex flex-col items-center">
           <div className="flex items-center gap-2 mb-6">
             <Image
-              src="Fox-Icon.png"
+              src="/Fox-Icon.png"
               alt="Fox Icon"
               width={60}
               height={60}
