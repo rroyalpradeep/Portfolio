@@ -1,7 +1,8 @@
 "use client"
-import React, { FormEvent } from "react";
 
-import { useState } from "react"
+import type React from "react"
+
+import { useState, useEffect } from "react"
 import { Card, CardContent } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
@@ -15,43 +16,21 @@ export default function Contact() {
     subject: "",
     message: "",
   })
+  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [submitMessage, setSubmitMessage] = useState("")
+
+  useEffect(() => {
+    // Check if the URL has a thanks parameter
+    const urlParams = new URLSearchParams(window.location.search)
+    if (urlParams.get("thanks") === "true") {
+      setSubmitMessage("Thank you for your message! I'll get back to you soon.")
+    }
+  }, [])
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target
     setFormData((prev) => ({ ...prev, [name]: value }))
   }
-
-
-  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    const formData = {
-      name: (e.currentTarget.elements.namedItem("name") as HTMLInputElement)?.value,
-      email: (e.currentTarget.elements.namedItem("email") as HTMLInputElement)?.value,
-      subject: (e.currentTarget.elements.namedItem("subject") as HTMLInputElement)?.value,
-      message: (e.currentTarget.elements.namedItem("message") as HTMLInputElement)?.value,
-  };
-    try {
-        const response = await fetch("/api/contact", {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify(formData),
-        });
-        
-        
-        const data = await response.json();
-        if (response.ok) {
-          alert("Thank you for your message! I'll get back to you soon.")
-          setFormData({ name: "", email: "", subject: "", message: "" })
-          console.log(formData)
-        } else {
-            alert("Error: " + data.error);
-        }
-    } catch (error) {
-        console.error("Error submitting form:", error);
-        alert("Failed to send message.");
-    }
-};
-
 
   return (
     <section id="contact" className="py-20 bg-gradient-to-b from-black/90 to-black">
@@ -112,74 +91,93 @@ export default function Contact() {
             <Card className="bg-black/40 border-primary/20">
               <CardContent className="p-6">
                 <h3 className="text-2xl font-bold mb-6 text-white">Send Me a Message</h3>
-                <form onSubmit={handleSubmit} className="space-y-6">
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+
+                {submitMessage ? (
+                  <div className="p-4 bg-primary/20 rounded-md text-white text-center">{submitMessage}</div>
+                ) : (
+                  <form
+                    action="https://formsubmit.co/pradeepsoniofficial@gmail.com"
+                    method="POST"
+                    className="space-y-6"
+                  >
+                    {/* Customize redirect */}
+                    <input type="hidden" name="_next" value="https://rroyalpradeep.github.io/Portfolio/?thanks=true" />
+                    <input type="hidden" name="_subject" value="New Portfolio Contact Form Submission" />
+                    <input type="hidden" name="_template" value="table" />
+
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                      <div className="space-y-2">
+                        <label htmlFor="name" className="text-sm font-medium text-white">
+                          Your Name
+                        </label>
+                        <Input
+                          id="name"
+                          name="name"
+                          value={formData.name}
+                          onChange={handleChange}
+                          placeholder="Name"
+                          required
+                          className="bg-black/60 border-primary/20 focus:border-primary text-white"
+                        />
+                      </div>
+
+                      <div className="space-y-2">
+                        <label htmlFor="email" className="text-sm font-medium text-white">
+                          Your Email
+                        </label>
+                        <Input
+                          id="email"
+                          name="email"
+                          type="email"
+                          value={formData.email}
+                          onChange={handleChange}
+                          placeholder="john@example.com"
+                          required
+                          className="bg-black/60 border-primary/20 focus:border-primary text-white"
+                        />
+                      </div>
+                    </div>
+
                     <div className="space-y-2">
-                      <label htmlFor="name" className="text-sm font-medium">
-                        Your Name
+                      <label htmlFor="subject" className="text-sm font-medium text-white">
+                        Subject
                       </label>
                       <Input
-                        id="name"
-                        name="name"
-                        value={formData.name}
+                        id="subject"
+                        name="subject"
+                        value={formData.subject}
                         onChange={handleChange}
-                        placeholder="John Doe"
+                        placeholder="Job Opportunity"
                         required
-                        className="bg-black/60 border-primary/20 focus:border-primary text-slate-100"
+                        className="bg-black/60 border-primary/20 focus:border-primary text-white"
                       />
                     </div>
 
                     <div className="space-y-2">
-                      <label htmlFor="email" className="text-sm font-medium">
-                        Your Email
+                      <label htmlFor="message" className="text-sm font-medium text-white">
+                        Your Message
                       </label>
-                      <Input
-                        id="email"
-                        name="email"
-                        type="email"
-                        value={formData.email}
+                      <Textarea
+                        id="message"
+                        name="message"
+                        value={formData.message}
                         onChange={handleChange}
-                        placeholder="john@example.com"
+                        placeholder="Hello, I'd like to talk about..."
                         required
-                        className="bg-black/60 border-primary/20 focus:border-primary text-slate-100"
+                        className="min-h-[150px] bg-black/60 border-primary/20 focus:border-primary text-white"
                       />
                     </div>
-                  </div>
 
-                  <div className="space-y-2">
-                    <label htmlFor="subject" className="text-sm font-medium">
-                      Subject
-                    </label>
-                    <Input
-                      id="subject"
-                      name="subject"
-                      value={formData.subject}
-                      onChange={handleChange}
-                      placeholder="Job Opportunity"
-                      required
-                      className="bg-black/60 border-primary/20 focus:border-primary text-slate-100"
-                    />
-                  </div>
-
-                  <div className="space-y-2">
-                    <label htmlFor="message" className="text-sm font-medium">
-                      Your Message
-                    </label>
-                    <Textarea
-                      id="message"
-                      name="message"
-                      value={formData.message}
-                      onChange={handleChange}
-                      placeholder="Hello, I'd like to talk about..."
-                      required
-                      className="min-h-[150px] bg-black/60 border-primary/20 focus:border-primary text-slate-100"
-                    />
-                  </div>
-
-                  <Button type="submit" className="w-full bg-primary hover:bg-primary/80 text-white">
-                    <Send className="mr-2 h-4 w-4" /> Send Message
-                  </Button>
-                </form>
+                    <Button
+                      type="submit"
+                      className="w-full bg-primary hover:bg-primary/80 text-white"
+                      disabled={isSubmitting}
+                    >
+                      <Send className="mr-2 h-4 w-4" />
+                      {isSubmitting ? "Sending..." : "Send Message"}
+                    </Button>
+                  </form>
+                )}
               </CardContent>
             </Card>
           </div>
@@ -225,7 +223,7 @@ function SocialLink({ href, icon }: { href: string; icon: string }) {
       rel="noopener noreferrer"
       className="w-12 h-12 rounded-full border-2 border-primary flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all duration-300 hover:scale-110 hover:drop-shadow-[0_0_5px_#37F06A]"
     >
-      <i className={`fa-brands fa-${icon} text-xl `}></i>
+      <i className={`fa-brands fa-${icon} text-xl`}></i>
     </a>
   )
 }
