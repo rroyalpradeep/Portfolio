@@ -57,7 +57,7 @@ export default function Projects() {
       description:
         "A responsive portfolio website showcasing projects, skills, and professional achievements with a modern design and smooth user experience.",
       image: "Portfolio.png",
-      tags: ["React", "Tailwind CSS", "JavaScript", "Nodemailer", ],
+      tags: ["React", "Tailwind CSS", "JavaScript", "Next"],
       github: "https://github.com/rroyalpradeep/Portfolio",
       demo: "https://rroyalpradeep.github.io/Portfolio/",
     },
