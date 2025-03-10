@@ -11,7 +11,7 @@ export default function Projects() {
       title: "MyBlog",
       description:
         "A dynamic blogging web application that allows users to read, write, and manage technology-focused blogs efficiently. Leveraged modern web technologies to ensure seamless functionality and an intuitive user experience.",
-      image: "/MyBlog.png",
+      image: "MyBlog.png",
       tags: ["HTML", "CSS", "JavaScript", "Node.js", "Express.js", "RESTful APIs"],
       github: "https://github.com/rroyalpradeep/MyBlog",
       demo: "#",
@@ -20,7 +20,7 @@ export default function Projects() {
       title: "Amazon Clone",
       description:
         "A frontend clone of Amazon.com's home page, replicating the UI and basic functionality using HTML, CSS, and JavaScript.",
-      image: "/Amazon-clone.png",
+      image: "Amazon-clone.png",
       tags: ["HTML", "CSS", "JavaScript"],
       github: "https://github.com/rroyalpradeep/amazon-clone",
       demo: "https://rroyalpradeep.github.io/Amazon-Clone/",
@@ -29,7 +29,7 @@ export default function Projects() {
       title: "Project Clock",
       description:
         "Designed and developed a responsive web application that dynamically displays the current time in both an elegant analog clock and a digital format. Ensured seamless real-time updates with smooth transitions.",
-      image: "/Clock.png",
+      image: "Clock.png",
       tags: ["HTML", "CSS", "JavaScript"],
       github: "https://github.com/rroyalpradeep/Clock",
       demo: "https://rroyalpradeep.github.io/Clock/",
@@ -38,7 +38,7 @@ export default function Projects() {
       title: "Rock Paper Scissors",
       description:
         "Developed an interactive web application where users can play the classic Rock, Paper, Scissors game against the computer with a real-time scoring system and both light and dark mode options.",
-      image: "/RPS.png",
+      image: "RPS.png",
       tags: ["HTML", "CSS", "JavaScript"],
       github: "https://github.com/rroyalpradeep/Rock-Paper-Scissor",
       demo: "https://rroyalpradeep.github.io/Rock-Paper-Scissor/",
@@ -47,7 +47,7 @@ export default function Projects() {
       title: "Computer Assistant",
       description:
         "A dynamic web application for certificate distribution, enabling users to generate, verify, and manage certificates efficiently.",
-      image: "/jarvis.webp",
+      image: "jarvis.webp",
       tags: ["Python", "speech_recognition", "NLP", "webbrowser", "smtplib"],
       github: "https://github.com/rroyalpradeep",
       demo: "#",
@@ -56,7 +56,7 @@ export default function Projects() {
       title: "Personal Portfolio",
       description:
         "A responsive portfolio website showcasing projects, skills, and professional achievements with a modern design and smooth user experience.",
-      image: "/Portfolio.png",
+      image: "Portfolio.png",
       tags: ["React", "Tailwind CSS", "JavaScript", "Nodemailer", ],
       github: "https://github.com/rroyalpradeep/Portfolio",
       demo: "https://rroyalpradeep.github.io/Portfolio/",
