@@ -1,4 +1,8 @@
-<h1 align="center">🚀 Pradeep Soni – Portfolio</h1>
+
+<h1 align="center">
+  <img width="264" height="264 alt="Fox-Icon" src="https://github.com/user-attachments/assets/49fa5317-0b07-47d9-84cd-74321db96608" /><br>
+  🚀 Pradeep Soni – Portfolio
+</h1>
 
 <p align="center">
   <strong>Developer | Designer | AI & ML Enthusiast</strong><br>
