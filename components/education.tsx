@@ -63,6 +63,14 @@ export default function Education() {
             </div>
 
             <div className="space-y-6">
+              , University of Delhi (2025) 
+              <CertificationCard
+                title="3rd Runner-up – HashHacks 7.0, Cluster of Innovation"
+                issuer="University of Delhi"
+                date="2025"
+                description="Certification for solving 170+ algorithmic problems on Leetcode platform using C and C++."
+              />
+
               <CertificationCard
                 title="1st runner up in 'Code-Quest'"
                 issuer="Lloyd Institute of Engineering and Technology"
@@ -71,10 +79,10 @@ export default function Education() {
               />
 
               <CertificationCard
-                title="Problem Solving in C++ on Leetcode"
-                issuer="Leetcode"
-                date="2024"
-                description="Certification for solving 170+ algorithmic problems on Leetcode platform using C and C++."
+                title="Policy Workshop – Niti: The Policy Lab, Kirori Mal College"
+                issuer="University of Delhi"
+                date="2025"
+                description="Present our Niti 'Swasth Bharat Abhiyan', a phased policy proposal for achieving Universal Health Care (UHC) in India."
               />
 
               <CertificationCard
@@ -102,7 +110,7 @@ export default function Education() {
                 title=" Event Coordinator & Technical Volunteer"
                 issuer=" Lloyd Institute of Engineering and Technology"
                 date="2023"
-                description=""
+                description="Organized and managed technical events, ensuring smooth execution of workshops, hackathons, and coding competitions."
               />
             </div>
 

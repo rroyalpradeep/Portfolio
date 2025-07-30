@@ -74,10 +74,11 @@ export default function About() {
               <CardContent className="p-6">
                 <h3 className="text-xl font-bold mb-4 text-center text-white">Professional Summary</h3>
                 <p className="text-gray-300">
-                  Experienced professional prepared to make a meaningful contribution in a volunteer capacity. Strong
-                  skills in team collaboration and adaptability to changing needs. Always focused on achieving impactful
-                  results. Excellent communication, organizational, and interpersonal abilities ensuring reliable
-                  support and promoting effective teamwork.
+                  Final year B.Tech CSE student at Lloyd Institute of Engineering and Technology with hands-on experience 
+                  in full-stack development, combining frontend skills (React.js) with backend expertise (MERN, Django). 
+                  Strong in C++, DSA, and OOP, with 90%+ code accuracy and a 50% boost in development efficiency. 
+                  Passionate about building scalable web applications and integrating AI. Excellent communication, 
+                  organizational, and interpersonal abilities ensuring reliable support and promoting effective teamwork.
                 </p>
               </CardContent>
             </Card>

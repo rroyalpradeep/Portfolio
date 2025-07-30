@@ -8,12 +8,39 @@ import { Github, ExternalLink } from "lucide-react"
 export default function Projects() {
   const projects = [
     {
+      title: "Smart Home Automation System",
+      description:
+        "A Wi-Fi-based smart home automation system that allows users to remotely control electrical appliances (e.g., bulbs, fans) via an Android application. The system integrates ESP8266 microcontroller with a Django REST API backend and Firebase Realtime Database for real-time device state synchronization.",
+      image: "/smart_home.png",
+      tags: ["Jetpack Compose (Kotlin)", "Django (REST APIs)", "Firebase", "Arduino IDE", "HTTP Client", "ESP8266 NodeMCU", "Breadboard", "Jumper Wires"],
+      github: "https://github.com/rroyalpradeep/Smart_Home_Automation_System/",
+      demo: "#",
+    },
+    {
       title: "MyBlog",
       description:
         "A dynamic blogging web application that allows users to read, write, and manage technology-focused blogs efficiently. Leveraged modern web technologies to ensure seamless functionality and an intuitive user experience.",
       image: "/MyBlog.png",
-      tags: ["HTML", "CSS", "JavaScript", "Node.js", "Express.js", "RESTful APIs"],
+      tags: ["EJS", "CSS", "JavaScript,", "Node.js", "Express.js", "SQL"],
       github: "https://github.com/rroyalpradeep/MyBlog",
+      demo: "#",
+    },
+    {
+      title: "AI-Powered National Health Portal:  ",
+      description:
+        " We have developed a comprehensive web application — a unified digital health portal that brings hospitals, doctors, diagnostic labs, and patients together on a single platform.  Contributed as Backend Engineer to an AI-driven national health portal; handled data integration and real-time communication features for 10+ healthcare providers. ",
+      image: "/jarvis.png",
+      tags: ["Next.js", "Firebase", "ChatBot"],
+      github: "https://github.com/SakshiThapliyal19/hashhacks",
+      demo: "#",
+    },
+    {
+      title: "# J.A.R.V.I.S. – Python AI Computer Assistant",
+      description:
+        "A dynamic web application for certificate distribution, enabling users to generate, verify, and manage certificates efficiently.",
+      image: "/jarvis.png",
+      tags: ["Python", "speech_recognition", "NLP", "webbrowser", "smtplib"],
+      github: "https://github.com/rroyalpradeep/jarvis",
       demo: "#",
     },
     {
@@ -42,15 +69,6 @@ export default function Projects() {
       tags: ["HTML", "CSS", "JavaScript"],
       github: "https://github.com/rroyalpradeep/Rock-Paper-Scissor",
       demo: "https://rroyalpradeep.github.io/Rock-Paper-Scissor/",
-    },
-    {
-      title: "Computer Assistant",
-      description:
-        "A dynamic web application for certificate distribution, enabling users to generate, verify, and manage certificates efficiently.",
-      image: "/jarvis.webp",
-      tags: ["Python", "speech_recognition", "NLP", "webbrowser", "smtplib"],
-      github: "https://github.com/rroyalpradeep",
-      demo: "#",
     },
     {
       title: "Personal Portfolio",

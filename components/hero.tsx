@@ -63,8 +63,8 @@ export default function Hero() {
             </div>
 
             <p className="text-lg text-gray-300 max-w-2xl">
-              As a <strong>Web Developer and Designer</strong> with over{" "}
-              <strong>2 years of extensive experience</strong>, I specialize in crafting innovative and visually
+              As a <strong>Developer and Designer</strong> with over{" "}
+              <strong>3+ years of extensive experience</strong>, I specialize in crafting innovative and visually
               appealing digital solutions. My expertise spans the full spectrum of web design, graphic design, and web
               development, enabling me to create dynamic, responsive websites and engaging user interfaces.
             </p>
@@ -94,11 +94,12 @@ export default function Hero() {
                 src="/Hero.jpg"
                 alt="Pradeep Soni"
                 fill
-                className="object-cover"
+                className="object-cover object-top"
                 priority
               />
             </div>
           </div>
+
         </div>
 
         <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
