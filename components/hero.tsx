@@ -91,7 +91,7 @@ export default function Hero() {
           <div className="w-full md:w-1/2 flex justify-center">
             <div className="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden border-4 border-primary shadow-[0_0_30px] shadow-primary">
               <Image
-                src="/Hero.jpg"
+                src="Hero.jpg"
                 alt="Pradeep Soni"
                 fill
                 className="object-cover object-top"
