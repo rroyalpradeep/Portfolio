@@ -90,10 +90,10 @@ export default function Contact() {
           <div>
             <Card className="bg-background/40 dark:bg-black/40 border-primary/20">
               <CardContent className="p-6">
-                <h3 className="text-2xl font-bold mb-6 text-white">Send Me a Message</h3>
+                <h3 className="text-2xl font-bold mb-6 text-foreground">Send Me a Message</h3>
 
                 {submitMessage ? (
-                  <div className="p-4 bg-primary/20 rounded-md text-white text-center">{submitMessage}</div>
+                  <div className="p-4 bg-primary/20 rounded-md text-foreground text-center">{submitMessage}</div>
                 ) : (
                   <form
                     action="https://formsubmit.co/pradeepsoniofficial@gmail.com"
@@ -106,25 +106,25 @@ export default function Contact() {
                     <input type="hidden" name="_template" value="table" />
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                      <div className="space-y-2">
-                        <label htmlFor="name" className="text-sm font-medium text-white">
-                          Your Name
-                        </label>
-                        <Input
-                          id="name"
-                          name="name"
-                          value={formData.name}
-                          onChange={handleChange}
-                          placeholder="Name"
-                          required
-                          className="bg-background/60 dark:bg-black/60 border-primary/20 focus:border-primary text-foreground"
-                        />
-                      </div>
+                    <div className="space-y-2">
+                      <label htmlFor="name" className="text-sm font-medium text-foreground">
+                        Your Name
+                      </label>
+                      <Input
+                        id="name"
+                        name="name"
+                        value={formData.name}
+                        onChange={handleChange}
+                        placeholder="Name"
+                        required
+                        className="bg-background/60 dark:bg-black/60 border-primary/20 focus:border-primary text-foreground"
+                      />
+                    </div>
 
                       <div className="space-y-2">
-                        <label htmlFor="email" className="text-sm font-medium text-white">
-                          Your Email
-                        </label>
+                      <label htmlFor="email" className="text-sm font-medium text-foreground">
+                        Your Email
+                      </label>
                         <Input
                           id="email"
                           name="email"
@@ -139,7 +139,7 @@ export default function Contact() {
                     </div>
 
                     <div className="space-y-2">
-                      <label htmlFor="subject" className="text-sm font-medium text-white">
+                      <label htmlFor="subject" className="text-sm font-medium text-foreground">
                         Subject
                       </label>
                       <Input
@@ -154,7 +154,7 @@ export default function Contact() {
                     </div>
 
                     <div className="space-y-2">
-                      <label htmlFor="message" className="text-sm font-medium text-white">
+                      <label htmlFor="message" className="text-sm font-medium text-foreground">
                         Your Message
                       </label>
                       <Textarea
