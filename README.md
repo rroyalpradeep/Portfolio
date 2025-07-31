@@ -16,7 +16,7 @@
   <a href="mailto:pradeepsoniofficial@gmail.com">
     <img src="https://img.shields.io/badge/Email-pradeepsoniofficial%40gmail.com-red?style=for-the-badge&logo=gmail" alt="Email">
   </a>
-  <a href="https://www.linkedin.com/in/pradeepsoni07" target="_blank">
+  <a href="https://www.linkedin.com/in/pradeepsoniofficial" target="_blank">
     <img src="https://img.shields.io/badge/LinkedIn-Pradeep%20Soni-blue?style=for-the-badge&logo=linkedin" alt="LinkedIn">
   </a>
 </p>
@@ -116,7 +116,7 @@ View more projects on [my portfolio](https://pradeepsoni.tech).
 **Portfolio:** [pradeepsoni.tech](https://pradeepsoni.tech)  
 **Email:** [pradeepsoniofficial@gmail.com](mailto:pradeepsoniofficial@gmail.com)  
 **Phone:** +91 7890606669  
-**LinkedIn:** [linkedin.com/in/pradeepsoni07](https://linkedin.com/in/pradeepsoni07)  
+**LinkedIn:** [https://www.linkedin.com/in/pradeepsoniofficial/](https://www.linkedin.com/in/pradeepsoniofficial/)  
 
 ---
 
