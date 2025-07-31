@@ -19,17 +19,17 @@ export default function Projects() {
     {
       title: "MyBlog",
       description:
-        "A dynamic blogging web application that allows users to read, write, and manage technology-focused blogs efficiently. Leveraged modern web technologies to ensure seamless functionality and an intuitive user experience.",
+        "A dynamic blogging web application that allows users to read, write, and manage technology-focused blogs efficiently. Leveraged modern web technologies to ensure seamless functionality and an intuitive user experience. A responsive blogging platform with user authentication and CRUD operations for blog posts where I have Used MySQL with SQL queries to manage efficient data storage and retrieval through RESTful API's",
       image: "/MyBlog.png",
       tags: ["EJS", "CSS", "JavaScript,", "Node.js", "Express.js", "SQL"],
       github: "https://github.com/rroyalpradeep/MyBlog",
       demo: "#",
     },
     {
-      title: "AI-Powered National Health Portal:  ",
+      title: "AI-Powered National Health Portal ",
       description:
         " We have developed a comprehensive web application — a unified digital health portal that brings hospitals, doctors, diagnostic labs, and patients together on a single platform.  Contributed as Backend Engineer to an AI-driven national health portal; handled data integration and real-time communication features for 10+ healthcare providers. ",
-      image: "/jarvis.png",
+      image: "/HealthPortal.png",
       tags: ["Next.js", "Firebase", "ChatBot"],
       github: "https://github.com/SakshiThapliyal19/hashhacks",
       demo: "#",
@@ -47,7 +47,7 @@ export default function Projects() {
       title: "Amazon Clone",
       description:
         "A frontend clone of Amazon.com's home page, replicating the UI and basic functionality using HTML, CSS, and JavaScript.",
-      image: "Amazon-clone.png",
+      image: "/AmazonClone.png",
       tags: ["HTML", "CSS", "JavaScript"],
       github: "https://github.com/rroyalpradeep/amazon-clone",
       demo: "https://rroyalpradeep.github.io/Amazon-Clone/",
@@ -56,7 +56,7 @@ export default function Projects() {
       title: "Project Clock",
       description:
         "Designed and developed a responsive web application that dynamically displays the current time in both an elegant analog clock and a digital format. Ensured seamless real-time updates with smooth transitions.",
-      image: "Clock.png",
+      image: "/Clock.png",
       tags: ["HTML", "CSS", "JavaScript"],
       github: "https://github.com/rroyalpradeep/Clock",
       demo: "https://rroyalpradeep.github.io/Clock/",
@@ -65,7 +65,7 @@ export default function Projects() {
       title: "Rock Paper Scissors",
       description:
         "Developed an interactive web application where users can play the classic Rock, Paper, Scissors game against the computer with a real-time scoring system and both light and dark mode options.",
-      image: "RPS.png",
+      image: "/RPS.png",
       tags: ["HTML", "CSS", "JavaScript"],
       github: "https://github.com/rroyalpradeep/Rock-Paper-Scissor",
       demo: "https://rroyalpradeep.github.io/Rock-Paper-Scissor/",
@@ -74,19 +74,20 @@ export default function Projects() {
       title: "Personal Portfolio",
       description:
         "A responsive portfolio website showcasing projects, skills, and professional achievements with a modern design and smooth user experience.",
-      image: "Portfolio.png",
+      image: "/portfolio.png",
       tags: ["React", "Tailwind CSS", "JavaScript", "Next"],
       github: "https://github.com/rroyalpradeep/Portfolio",
       demo: "https://rroyalpradeep.github.io/Portfolio/",
     },
+
   ]
 
   return (
-    <section id="projects" className="py-20 bg-black">
+    <section id="projects" className="py-20 bg-background dark:bg-black">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            My <span className="text-primary">Projects</span>
+            <span className="text-foreground">My</span> <span className="text-primary">Projects</span>
           </h2>
           <div className="w-20 h-1 bg-primary mx-auto mb-6"></div>
           <p className="text-gray-300 max-w-2xl mx-auto">
@@ -95,7 +96,7 @@ export default function Projects() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projects.slice(0, 6).map((project, index) => (
+          {projects.map((project, index) => (
             <ProjectCard key={index} project={project} />
           ))}
         </div>
@@ -112,13 +113,14 @@ export default function Projects() {
 
 function ProjectCard({ project }: { project: any }) {
   return (
-    <Card className="bg-black/40 border-primary/20 hover:border-primary transition-all duration-300 overflow-hidden group">
-      <div className="relative h-48 overflow-hidden">
+    <Card className="bg-background/40 dark:bg-black/40 border-primary/20 hover:border-primary transition-all duration-300 overflow-hidden group">
+      <div className="relative h-96 overflow-hidden">
         <Image
           src={project.image || "/placeholder.svg"}
           alt={project.title}
           fill
-          className="object-cover transition-transform duration-500 group-hover:scale-110"
+          style={{ objectFit: "cover" }}
+          className="transition-transform duration-500 group-hover:scale-110"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center p-4">
           <div className="flex gap-4">

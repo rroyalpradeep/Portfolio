@@ -33,14 +33,14 @@ export default function Contact() {
   }
 
   return (
-    <section id="contact" className="py-20 bg-gradient-to-b from-black/90 to-black">
+    <section id="contact" className="py-20 bg-background text-foreground">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             Get In <span className="text-primary">Touch</span>
           </h2>
           <div className="w-20 h-1 bg-primary mx-auto mb-6"></div>
-          <p className="text-gray-300 max-w-2xl mx-auto">
+          <p className="text-muted-foreground max-w-2xl mx-auto">
             Feel free to contact me for any work or suggestions. I'm always open to discussing new projects, creative
             ideas, or opportunities to be part of your vision.
           </p>
@@ -49,7 +49,7 @@ export default function Contact() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           <div>
             <h3 className="text-2xl font-bold mb-6">Contact Information</h3>
-            <p className="text-gray-300 mb-8">
+            <p className="text-muted-foreground mb-8">
               I'm interested in freelance opportunities, internships, and collaborations. However, if you have other
               requests or questions, don't hesitate to contact me.
             </p>
@@ -88,7 +88,7 @@ export default function Contact() {
           </div>
 
           <div>
-            <Card className="bg-black/40 border-primary/20">
+            <Card className="bg-background/40 dark:bg-black/40 border-primary/20">
               <CardContent className="p-6">
                 <h3 className="text-2xl font-bold mb-6 text-white">Send Me a Message</h3>
 
@@ -117,7 +117,7 @@ export default function Contact() {
                           onChange={handleChange}
                           placeholder="Name"
                           required
-                          className="bg-black/60 border-primary/20 focus:border-primary text-white"
+                          className="bg-background/60 dark:bg-black/60 border-primary/20 focus:border-primary text-foreground"
                         />
                       </div>
 
@@ -133,7 +133,7 @@ export default function Contact() {
                           onChange={handleChange}
                           placeholder="john@example.com"
                           required
-                          className="bg-black/60 border-primary/20 focus:border-primary text-white"
+                          className="bg-background/60 dark:bg-black/60 border-primary/20 focus:border-primary text-foreground"
                         />
                       </div>
                     </div>
@@ -149,7 +149,7 @@ export default function Contact() {
                         onChange={handleChange}
                         placeholder="Job Opportunity"
                         required
-                        className="bg-black/60 border-primary/20 focus:border-primary text-white"
+                        className="bg-background/60 dark:bg-black/60 border-primary/20 focus:border-primary text-foreground"
                       />
                     </div>
 
@@ -164,7 +164,7 @@ export default function Contact() {
                         onChange={handleChange}
                         placeholder="Hello, I'd like to talk about..."
                         required
-                        className="min-h-[150px] bg-black/60 border-primary/20 focus:border-primary text-white"
+                        className="min-h-[150px] bg-background/60 dark:bg-black/60 border-primary/20 focus:border-primary text-foreground"
                       />
                     </div>
 
@@ -204,11 +204,11 @@ function ContactItem({
       <div>
         <h4 className="font-bold text-lg">{title}</h4>
         {link ? (
-          <a href={link} className="text-gray-300 hover:text-primary transition-colors">
+          <a href={link} className="text-muted-foreground hover:text-primary transition-colors">
             {content}
           </a>
         ) : (
-          <p className="text-gray-300">{content}</p>
+          <p className="text-muted-foreground">{content}</p>
         )}
       </div>
     </div>

@@ -49,7 +49,7 @@ export default function Hero() {
   }
 
   return (
-    <section id="home" className="relative min-h-screen pt-20 flex items-center">
+    <section id="home" className="relative min-h-screen pt-20 flex items-center bg-background text-foreground">
       <div className="container mx-auto px-4">
         <div className="flex flex-col-reverse md:flex-row items-center justify-between gap-12">
           <div className="w-full md:w-1/2 space-y-6 text-center md:text-left">
@@ -62,7 +62,7 @@ export default function Hero() {
               <span className="text-primary animate-blink">|</span>
             </div>
 
-            <p className="text-lg text-gray-300 max-w-2xl">
+            <p className="text-lg text-muted-foreground max-w-2xl">
               As a <strong>Developer and Designer</strong> with over{" "}
               <strong>3+ years of extensive experience</strong>, I specialize in crafting innovative and visually
               appealing digital solutions. My expertise spans the full spectrum of web design, graphic design, and web
@@ -78,7 +78,7 @@ export default function Hero() {
 
             <div className="flex flex-wrap gap-4 justify-center md:justify-start pt-4">
               <a href="mailto:pradeepsoniofficial@gmail.com">
-                <Button className="bg-primary hover:bg-primary/80 text-white px-8 py-6 text-lg">Hire Me</Button>
+                <Button className="bg-primary hover:bg-primary/80 text-primary-foreground px-8 py-6 text-lg">Hire Me</Button>
               </a>
               <a href="https://rroyalpradeep.github.io/Resume/" target="_blank" rel="noopener noreferrer">
                 <Button variant="outline" className="border-primary text-primary hover:bg-primary/10 px-8 py-6 text-lg">
@@ -91,7 +91,7 @@ export default function Hero() {
           <div className="w-full md:w-1/2 flex justify-center">
             <div className="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden border-4 border-primary shadow-[0_0_30px] shadow-primary">
               <Image
-                src="Hero.jpg"
+                src="/Hero.jpg"
                 alt="Pradeep Soni"
                 fill
                 className="object-cover object-top"
@@ -102,8 +102,13 @@ export default function Hero() {
 
         </div>
 
-        <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
-          <a href="#about" className="text-white/70 hover:text-primary transition-colors">
+        <div className="hidden md:block absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce z-10">
+          <a
+            href="#about"
+            className="text-muted-foreground hover:text-primary transition-colors"
+            title="Scroll to About section"
+            style={{ cursor: 'pointer' }}
+          >
             <ArrowDown size={32} />
           </a>
         </div>
@@ -118,7 +123,8 @@ function SocialIcon({ href, icon }: { href: string; icon: string }) {
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      className="w-12 h-12 rounded-full border-2 border-primary flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all duration-300 hover:scale-110 hover:shadow-[0_0_15px] hover:shadow-primary"
+      title={`Visit my ${icon.charAt(0).toUpperCase() + icon.slice(1)}`}
+      className="w-12 h-12 rounded-full border-2 border-primary flex items-center justify-center text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300 hover:scale-110 hover:shadow-[0_0_15px] hover:shadow-primary"
     >
       <i className={`fa-brands fa-${icon} text-xl`}></i>
     </a>
