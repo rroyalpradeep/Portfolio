@@ -26,7 +26,19 @@
 ## 📌 About Me
 I’m **Pradeep Soni**, a **Computer Science Engineering student** specializing in **AI & ML** at **Lloyd Institute of Engineering & Technology**.
 
-With **3+ years** of experience in **web development, graphic design, and UI/UX design**, I combine **technical expertise** with **creative problem-solving** to craft dynamic, responsive, and engaging digital solutions.
+With **4+ years** of experience in **Data Structures, web development, graphic design, and UI/UX design**, I combine **technical expertise** with **creative problem-solving** to craft dynamic, responsive, and engaging digital solutions.
+
+---
+
+
+## Experience
+	Junior Software Developer at TradeIndia (Infocom Network Private Limited), Sec-137 Noida, Aug 2025 to Present
+ Key Responsibilities & Achievements:
+- Working in a large-scale B2B e-commerce environment, I am gaining hands-on experience with real-world production systems and backend workflows.
+- Successfully completed full knowledge transfer (KT) for the Accounts & Taxation backend module, including understanding invoice workflows, credit notes, and tax calculation logic.
+- Over the past 4 months, gained practical experience in production-level backend development
+- Implemented the Credit Note Tax Invoicing module and delivered my first production merge to the main branch.
+- Appreciated by the Team Lead and Manager for the quality of work, accuracy, and timely delivery.
 
 ---
 
@@ -37,6 +49,7 @@ With **3+ years** of experience in **web development, graphic design, and UI/UX 
 - JavaScript (80%)
 - Python (75%)
 - SQL (75%)
+- Perl (70%)
 - Java (70%)
 
 ### **Web Development**
@@ -49,6 +62,7 @@ With **3+ years** of experience in **web development, graphic design, and UI/UX 
 ### **Databases**
 - MySQL, MongoDB
 - Firebase Realtime Database
+- PostgreSQL
 
 ### **Mobile Development**
 - Jetpack Compose (Kotlin)
@@ -56,10 +70,15 @@ With **3+ years** of experience in **web development, graphic design, and UI/UX 
 
 ### **Cloud & DevOps**
 - AWS (EC2, S3, Lambda Basics)
+- CI/CD pipelines
+- Azure
+- Docker
+- Kubernetes
 
 ### **Tools**
-- Git & GitHub, VS Code, PyCharm
+- Git & GitHub, VS Code, PyCharm, IntelliJ
 - Android Studio, Figma
+- MS Office, LibreOffice
 
 ### **Soft Skills**
 - Communication, Teamwork, Time Management, Adaptability
@@ -68,25 +87,27 @@ With **3+ years** of experience in **web development, graphic design, and UI/UX 
 
 ## 💼 Featured Projects
 
-### **1. Smart Home Automation System**
+### **1. MultiRoleShop - Multi-Role E-Commerce Platform**
+Built a Django-based e-commerce platform with multi-role support (Users, Vendors, Admins) featuring OTP authentication, product approval workflows, shopping cart, Razorpay secure online payments, role-based dashboards, secure transactions, product search/filtering, and analytics.
+Implemented user management, product listing, password reset, and responsive UI.
+**Tech Stacks:** Django, SQLite, HTML, CSS, JavaScript, Tailwind CSS, Razorpay API, SMTP, Pillow.
+
+
+### **2. Smart Home Automation System**
 Wi-Fi-based system to control electrical appliances remotely using an Android app.  
 **Tech:** Jetpack Compose, Django REST APIs, Firebase, ESP8266 NodeMCU
 
-### **2. MyBlog**
-Dynamic blog platform for reading, writing, and managing tech blogs.  
+### **3. MyBlog**
+A dynamic blog platform for reading, writing, and managing tech blogs.  
 **Tech:** EJS, CSS, JavaScript, Node.js, Express.js, SQL
 
-### **3. AI-Powered National Health Portal**
+### **4. AI-Powered National Health Portal**
 Unified digital health portal integrating hospitals, doctors, labs, and patients.  
 **Tech:** Next.js, Firebase, Chatbot
 
-### **4. J.A.R.V.I.S – Python AI Computer Assistant**
+### **5. J.A.R.V.I.S – Python AI Computer Assistant**
 Voice-controlled desktop assistant for automation and information retrieval.  
 **Tech:** Python, SpeechRecognition, NLP, Webbrowser, smtplib
-
-### **5. Amazon Clone**
-Frontend replica of Amazon.com homepage.  
-**Tech:** HTML, CSS, JavaScript
 
 View more projects on [my portfolio](https://pradeepsoni.tech).
 
@@ -103,11 +124,13 @@ View more projects on [my portfolio](https://pradeepsoni.tech).
 ---
 
 ## 🏆 Achievements & Certifications
+- **Secured 4 offer letters** from different companies at the college placement.		July 2025
 - **3rd Runner-up** – HashHacks 7.0, University of Delhi (2025)
 - **1st Runner-up** – Code-Quest, Lloyd Institute (2023)
 - **Network Technician Career Path** – Cisco Networking Academy (2024)
 - **Web Development Fundamentals** – ApnaCollege (2023)
 - **Policy Workshop** – Niti: The Policy Lab, Kirori Mal College (2025)
+- **International Conference Volunteer** Hosted the event at the college campus – LIET
 
 ---
 
