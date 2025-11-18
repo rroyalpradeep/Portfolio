@@ -25,7 +25,7 @@
 
 ## 📌 About Me
 I’m **Pradeep Soni**, a **Computer Science Engineering student** specializing in **AI & ML** at **Lloyd Institute of Engineering & Technology**.
-
+Full-stack developer with real industry experience at TradeIndia (Infocom Network Pvt. Ltd.), where I work on backend systems, accounts workflows, and production-grade features. Strong technical foundation in React.js, MERN, Django, C++, DSA, and OOP, with a track record of delivering reliable, efficient code.
 With **4+ years** of experience in **Data Structures, web development, graphic design, and UI/UX design**, I combine **technical expertise** with **creative problem-solving** to craft dynamic, responsive, and engaging digital solutions.
 
 ---
