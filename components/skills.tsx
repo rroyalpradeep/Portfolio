@@ -1,7 +1,7 @@
 import type React from "react"
 import { Card, CardContent } from "@/components/ui/card"
 import { Progress } from "@/components/ui/progress"
-import { Code, Globe, Database, Terminal, Braces, Server, Cloudy, Smartphone, Tool, Cpu } from "lucide-react"
+import { Code, Globe, Database, Terminal, Braces, Server, Cloudy, Smartphone, Wrench, Cpu } from "lucide-react"
 
 export default function Skills() {
   return (
@@ -85,7 +85,7 @@ export default function Skills() {
             />
 
             <SkillCard
-              icon={<Tool className="text-primary" size={32} />}
+              icon={<Wrench className="text-primary" size={32} />}
               title="Tools & IDEs"
               skills={["Git/GitHub", "VS Code", "PyCharm", "IntelliJ", "Android Studio", "Postman", "Thunder Client", "Jira", "Bitbucket", "Figma"]}
             />
