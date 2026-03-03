@@ -1,7 +1,7 @@
 import type React from "react"
 import { Card, CardContent } from "@/components/ui/card"
 import { Progress } from "@/components/ui/progress"
-import { Code, Globe, Database, Terminal, Braces, Server, Cloudy, Smartphone } from "lucide-react"
+import { Code, Globe, Database, Terminal, Braces, Server, Cloudy, Smartphone, Tool, Cpu } from "lucide-react"
 
 export default function Skills() {
   return (
@@ -25,11 +25,13 @@ export default function Skills() {
             </h3>
 
             <div className="space-y-6">
-              <SkillBar name="C/C++" percentage={85} />
-              <SkillBar name="JavaScript" percentage={80} />
-              <SkillBar name="Python" percentage={75} />
-              <SkillBar name="SQL" percentage={75} />
-              <SkillBar name="Java" percentage={70} />
+              <SkillBar name="C/C++" percentage={90} />
+              <SkillBar name="JavaScript" percentage={85} />
+              <SkillBar name="C#" percentage={75} />
+              <SkillBar name="Python" percentage={80} />
+              <SkillBar name="Java" percentage={75} />
+              <SkillBar name="SQL" percentage={85} />
+              <SkillBar name="Perl" percentage={80} />
             </div>
 
             <h3 className="text-2xl font-bold mt-12 mb-6 flex items-center">
@@ -37,59 +39,73 @@ export default function Skills() {
             </h3>
 
             <div className="space-y-6">
-              <SkillBar name="EJS" percentage={80} />
+              <SkillBar name="HTML/CSS" percentage={90} />
+              <SkillBar name="React.js" percentage={85} />
               <SkillBar name="Tailwind CSS" percentage={85} />
+              <SkillBar name="Node.js" percentage={80} />
+              <SkillBar name="Express.js" percentage={80} />
+              <SkillBar name="Django" percentage={80} />
+              <SkillBar name="FastAPI" percentage={75} />
+              <SkillBar name="EJS" percentage={80} />
               <SkillBar name="Bootstrap" percentage={85} />
-              <SkillBar name="React.js" percentage={80} />
-              <SkillBar name="Node.js" percentage={75} />
-              <SkillBar name="Express.js" percentage={70} />
-              <SkillBar name="Django" percentage={70} />
-              <SkillBar name="FastAPI" percentage={80} />
-              <SkillBar name="REST" percentage={75} />
+              <SkillBar name="jQuery/AJAX" percentage={80} />
+            </div>
+
+            <h3 className="text-2xl font-bold mt-12 mb-6 flex items-center">
+              <Server className="mr-2 text-primary" /> Backend Technologies
+            </h3>
+
+            <div className="space-y-6">
+              <SkillBar name="Node.js/Express" percentage={80} />
+              <SkillBar name="Django" percentage={80} />
+              <SkillBar name="FastAPI" percentage={75} />
+              <SkillBar name="Perl (Mason/CGI)" percentage={80} />
+              <SkillBar name="RESTful APIs" percentage={85} />
+              <SkillBar name=".NET" percentage={70} />
             </div>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 content-start">
             <SkillCard
-              icon={<Terminal className="text-primary" size={32} />}
-              title="Problem Solving"
-              skills={["Data Structures", "Algorithms", "Logical Thinking", "Debugging", "Flowchart"]}
-            />
-
-            <SkillCard
               icon={<Database className="text-primary" size={32} />}
               title="Databases"
-              skills={["MySQL","MongoDB", "Database Design", "Firebase Realtime Database", "Data Modeling"]}
+              skills={["PostgreSQL", "MySQL", "MongoDB", "Query Optimization", "Dynamic SQL", "Database Design", "Firebase Realtime DB"]}
             />
 
             <SkillCard
               icon={<Smartphone className="text-primary" size={32} />}
               title="Mobile App Development"
-              skills={["Jetpack Compose", "Firebase SDK", "Kotlin with Android Studio"]}
+              skills={["Kotlin", "Android Studio", "Jetpack Compose", "Firebase SDK"]}
             />
             
             <SkillCard
               icon={<Cloudy className="text-primary" size={32} />}
               title="Cloud & DevOps"
-              skills={["AWS: EC2", "AWS: S3", "AWS: Lambda Basics"]}
+              skills={["AWS (EC2, S3, Lambda)", "Azure", "Docker", "Kubernetes", "Jenkins", "CI/CD Pipelines", "GitHub Actions"]}
             />
 
             <SkillCard
-              icon={<Braces className="text-primary" size={32} />}
+              icon={<Tool className="text-primary" size={32} />}
               title="Tools & IDEs"
-              skills={["Git & GitHub", "VS Code, PyCharm, IntelliJ", "Android Studio", "Arduino IDE", "Figma & MS Office"]}
+              skills={["Git/GitHub", "VS Code", "PyCharm", "IntelliJ", "Android Studio", "Postman", "Thunder Client", "Jira", "Bitbucket", "Figma"]}
             />
 
             <SkillCard
-              icon={<Server className="text-primary" size={32} />}
+              icon={<Cpu className="text-primary" size={32} />}
+              title="Problem Solving"
+              skills={["Data Structures", "Algorithms", "DSA", "OOP", "System Design", "Debugging", "Flowchart"]}
+            />
+
+            <SkillCard
+              icon={<Terminal className="text-primary" size={32} />}
               title="Soft Skills"
-              skills={["Communication", "Teamwork", "Time Management", "Adaptability", "Brainstorming"]}
+              skills={["Communication", "Teamwork", "Time Management", "Adaptability", "Brainstorming", "Problem Solving"]}
             />
 
             <Card className="bg-background/40 dark:bg-black/40 border-primary/20 md:col-span-2">
               <CardContent className="p-6">
                 <h3 className="text-xl font-bold mb-4 text-foreground">Coding Profiles</h3>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
                   <a
                     href="https://leetcode.com/u/pradeep884/"
                     target="_blank"
@@ -121,6 +137,14 @@ export default function Skills() {
                     className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
                   >
                     <i className="fa-solid fa-laptop-code text-primary"></i> Codolio
+                  </a>
+                  <a
+                    href="https://github.com/rroyalpradeep"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
+                  >
+                    <i className="fa-brands fa-github text-primary"></i> GitHub
                   </a>
                 </div>
               </CardContent>
@@ -156,7 +180,7 @@ function SkillCard({ icon, title, skills }: { icon: React.ReactNode; title: stri
           {skills.map((skill, index) => (
             <li key={index} className="flex items-center gap-2">
               <div className="w-1.5 h-1.5 rounded-full bg-primary"></div>
-              <span className="text-muted-foreground">{skill}</span>
+              <span className="text-muted-foreground text-sm">{skill}</span>
             </li>
           ))}
         </ul>
@@ -164,4 +188,3 @@ function SkillCard({ icon, title, skills }: { icon: React.ReactNode; title: stri
     </Card>
   )
 }
-

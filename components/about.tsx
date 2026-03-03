@@ -36,7 +36,7 @@ export default function About() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <InfoItem icon={<User size={18} />} label="Name" value="Pradeep Soni" />
               <InfoItem icon={<Mail size={18} />} label="Email" value="pradeepsoniofficial@gmail.com" />
-              <InfoItem icon={<Phone size={18} />} label="Phone" value="+91-7890606669" />
+<InfoItem icon={<Phone size={18} />} label="Phone" value="+91-7880606669" />
               <InfoItem icon={<MapPin size={18} />} label="Location" value="Greater Noida, India" />
               <InfoItem icon={<Calendar size={18} />} label="Birthday" value="July 15, 2003" />
               <InfoItem icon={<Flag size={18} />} label="Nationality" value="Indian" />
@@ -70,15 +70,16 @@ export default function About() {
               </CardContent>
             </Card>
 
-            <Card className="bg-background/40 dark:bg-black/40 border-primary/20 hover:border-primary transition-colors md:col-span-2">
+<Card className="bg-background/40 dark:bg-black/40 border-primary/20 hover:border-primary transition-colors md:col-span-2">
               <CardContent className="p-6">
                 <h3 className="text-xl font-bold mb-4 text-center text-foreground">Professional Summary</h3>
                 <p className="text-muted-foreground">
-                  Final year B.Tech CSE student at Lloyd Institute of Engineering and Technology with hands-on experience 
-                  in full-stack development, combining frontend skills (React.js) with backend expertise (MERN, Django). 
-                  Strong in C++, DSA, and OOP, with 90%+ code accuracy and a 50% boost in development efficiency. 
-                  Passionate about building scalable web applications and integrating AI. Excellent communication, 
-                  organizational, and interpersonal abilities ensuring reliable support and promoting effective teamwork.
+                  Final year B.Tech CSE student at Lloyd Institute of Engineering and Technology with real industry 
+                  experience at TradeIndia (Infocom Network Pvt. Ltd.), working on backend systems, multiple high-performance 
+                  backend APIs for an SFA platform, accounts workflows, and production-grade features. Strong technical 
+                  foundation in React.js, MERN, Django, C++, DSA, and OOP, with a track record of delivering reliable, 
+                  efficient code (90%+ accuracy and 50% faster development). Passionate about scalable system design, 
+                  clean architectures, and solving real business problems through technology.
                 </p>
               </CardContent>
             </Card>

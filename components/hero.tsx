@@ -11,7 +11,7 @@ export default function Hero() {
   const [loopNum, setLoopNum] = useState(0)
   const [typingSpeed, setTypingSpeed] = useState(150)
 
-  const roles = ["DEVELOPER", "DESIGNER", "PROGRAMMER"]
+const roles = ["FULL STACK DEVELOPER", "BACKEND ENGINEER", "PROBLEM SOLVER"]
   const period = 2000
 
   useEffect(() => {
@@ -62,11 +62,11 @@ export default function Hero() {
               <span className="text-primary animate-blink">|</span>
             </div>
 
-            <p className="text-lg text-muted-foreground max-w-2xl">
-              As a <strong>Developer and Designer</strong> with over{" "}
-              <strong>3+ years of extensive experience</strong>, I specialize in crafting innovative and visually
-              appealing digital solutions. My expertise spans the full spectrum of web design, graphic design, and web
-              development, enabling me to create dynamic, responsive websites and engaging user interfaces.
+<p className="text-lg text-muted-foreground max-w-2xl">
+              Final year B.Tech CSE student at Lloyd Institute of Engineering and Technology with real industry 
+              experience at TradeIndia. Specialized in <strong>full-stack development</strong>, building high-performance 
+              backend APIs, and scalable system design. Strong foundation in React.js, MERN, Django, C++, DSA, and OOP 
+              with a track record of delivering reliable, efficient code.
             </p>
 
             <div className="flex flex-wrap gap-4 justify-center md:justify-start">

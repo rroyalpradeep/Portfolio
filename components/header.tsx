@@ -79,12 +79,13 @@ export default function Header() {
                 <span className="text-foreground">Pradeep</span> <span className="text-primary">Soni</span>
               </div>
             </div>
-            {/* Desktop Navigation */}
+{/* Desktop Navigation */}
             <div className="hidden md:flex items-center space-x-8">
               <NavLink href="#home">Home</NavLink>
               <NavLink href="#about">About</NavLink>
               <NavLink href="#skills">Skills</NavLink>
               <NavLink href="#projects">Projects</NavLink>
+              <NavLink href="#experience">Experience</NavLink>
               <NavLink href="#education">Education</NavLink>
               <NavLink href="#contact">Contact</NavLink>
               {/* Theme Toggle Button */}
@@ -107,37 +108,38 @@ export default function Header() {
             </button>
           </nav>
         </div>
-        {/* Mobile Navigation */}
-        <div
-          className={`fixed inset-0 z-40 bg-background/80 dark:bg-black/80 backdrop-blur-md transform transition-transform duration-300 ease-in-out ${isMenuOpen ? "translate-x-0" : "translate-x-full"} md:hidden`}
-        >
-          {/* Close Button */}
-          <button
-            className="absolute top-6 right-6 text-foreground text-3xl focus:outline-none"
-            onClick={() => setIsMenuOpen(false)}
-            aria-label="Close menu"
+{/* Mobile Navigation */}
+          <div
+            className={`fixed inset-0 z-40 bg-background/80 dark:bg-black/80 backdrop-blur-md transform transition-transform duration-300 ease-in-out ${isMenuOpen ? "translate-x-0" : "translate-x-full"} md:hidden`}
           >
-            <X size={36} />
-          </button>
-          {/* Theme Toggle Button (Mobile) */}
-          <button
-            className="absolute top-6 left-6 p-2 rounded-full bg-background/80 dark:bg-white/10 hover:bg-primary/20 transition-colors focus:outline-none"
-            aria-label="Toggle dark mode"
-            onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}
-            suppressHydrationWarning
-          >
-            {mounted && (resolvedTheme === "dark" ? (
-              <Sun size={28} className="text-yellow-400" />
-            ) : (
-              <Moon size={28} className="text-gray-800" />
-            ))}
-          </button>
+            {/* Close Button */}
+            <button
+              className="absolute top-6 right-6 text-foreground text-3xl focus:outline-none"
+              onClick={() => setIsMenuOpen(false)}
+              aria-label="Close menu"
+            >
+              <X size={36} />
+            </button>
+            {/* Theme Toggle Button (Mobile) */}
+            <button
+              className="absolute top-6 left-6 p-2 rounded-full bg-background/80 dark:bg-white/10 hover:bg-primary/20 transition-colors focus:outline-none"
+              aria-label="Toggle dark mode"
+              onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}
+              suppressHydrationWarning
+            >
+              {mounted && (resolvedTheme === "dark" ? (
+                <Sun size={28} className="text-yellow-400" />
+              ) : (
+                <Moon size={28} className="text-gray-800" />
+              ))}
+            </button>
           <div className="flex flex-col items-center overflow-y-auto py-16 space-y-8 text-xl">
             {[
               { label: "Home", href: "#home" },
               { label: "About", href: "#about" },
               { label: "Skills", href: "#skills" },
               { label: "Projects", href: "#projects" },
+              { label: "Experience", href: "#experience" },
               { label: "Education", href: "#education" },
               { label: "Contact", href: "#contact" },
             ].map((item, idx) => (

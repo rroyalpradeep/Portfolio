@@ -8,78 +8,77 @@ import { Github, ExternalLink } from "lucide-react"
 export default function Projects() {
   const projects = [
     {
+      title: "MultiRoleShop - E-Commerce Platform",
+      description:
+        "A Django-based e-commerce platform with multi-role support (Users, Vendors, Admins) featuring OTP authentication, product approval workflows, shopping cart, Razorpay secure online payments, role-based dashboards, secure transactions, product search/filtering, and analytics.",
+      image: "/Portfolio.png",
+      tags: ["Django", "SQLite", "HTML", "CSS", "JavaScript", "Tailwind CSS", "Razorpay API", "SMTP", "Pillow"],
+      github: "https://github.com/rroyalpradeep/MultiRoleShop",
+      demo: "#",
+    },
+    {
       title: "Smart Home Automation System",
       description:
-        "A Wi-Fi-based smart home automation system that allows users to remotely control electrical appliances (e.g., bulbs, fans) via an Android application. The system integrates ESP8266 microcontroller with a Django REST API backend and Firebase Realtime Database for real-time device state synchronization.",
+        "A Wi-Fi-based smart home automation system that allows users to remotely control electrical appliances (bulbs, fans, motors) via an Android application. The system integrates ESP8266 NodeMCU with a Django REST API backend and Firebase for real-time device state synchronization.",
       image: "/smart_home.png",
-      tags: ["Jetpack Compose (Kotlin)", "Django (REST APIs)", "Firebase", "Arduino IDE", "HTTP Client", "ESP8266 NodeMCU", "Breadboard", "Jumper Wires"],
+      tags: ["Jetpack Compose (Kotlin)", "Django REST APIs", "Firebase", "Arduino IDE", "ESP8266 NodeMCU", "Relay Module", "HTTP Client"],
       github: "https://github.com/rroyalpradeep/Smart_Home_Automation_System/",
       demo: "#",
     },
     {
-      title: "MyBlog",
+      title: "MyBlog - Technology Blog",
       description:
-        "A dynamic blogging web application that allows users to read, write, and manage technology-focused blogs efficiently. Leveraged modern web technologies to ensure seamless functionality and an intuitive user experience. A responsive blogging platform with user authentication and CRUD operations for blog posts where I have Used MySQL with SQL queries to manage efficient data storage and retrieval through RESTful API's",
+        "A responsive blogging platform with user authentication and CRUD operations for blog posts. Features RESTful API endpoints for seamless data retrieval and manipulation, with MySQL for efficient data storage and retrieval.",
       image: "/MyBlog.png",
-      tags: ["EJS", "CSS", "JavaScript,", "Node.js", "Express.js", "SQL"],
+      tags: ["EJS", "CSS", "JavaScript", "Node.js", "Express.js", "MySQL", "REST APIs"],
       github: "https://github.com/rroyalpradeep/MyBlog",
       demo: "#",
     },
     {
-      title: "AI-Powered National Health Portal ",
+      title: "AI-Powered National Health Portal",
       description:
-        " We have developed a comprehensive web application — a unified digital health portal that brings hospitals, doctors, diagnostic labs, and patients together on a single platform.  Contributed as Backend Engineer to an AI-driven national health portal; handled data integration and real-time communication features for 10+ healthcare providers. ",
+        "A unified digital health portal bringing hospitals, doctors, diagnostic labs, and patients together on a single platform. Contributed as Backend Engineer handling data integration and real-time communication features for 10+ healthcare providers.",
       image: "/HealthPortal.png",
-      tags: ["Next.js", "Firebase", "ChatBot"],
+      tags: ["Next.js", "Firebase", "ChatBot", "Backend API", "Healthcare"],
       github: "https://github.com/SakshiThapliyal19/hashhacks",
       demo: "#",
     },
     {
-      title: "# J.A.R.V.I.S. – Python AI Computer Assistant",
+      title: "J.A.R.V.I.S. - Python AI Assistant",
       description:
-        "A dynamic web application for certificate distribution, enabling users to generate, verify, and manage certificates efficiently.",
+        "A Python-based AI computer assistant that can perform various tasks through voice commands, including web browsing, sending emails, and providing information using speech recognition and NLP.",
       image: "/jarvis.png",
-      tags: ["Python", "speech_recognition", "NLP", "webbrowser", "smtplib"],
+      tags: ["Python", "Speech Recognition", "NLP", "Webbrowser", "SMTPLib"],
       github: "https://github.com/rroyalpradeep/jarvis",
       demo: "#",
     },
     {
       title: "Amazon Clone",
       description:
-        "A frontend clone of Amazon.com's home page, replicating the UI and basic functionality using HTML, CSS, and JavaScript.",
+        "A frontend clone of Amazon.com's home page, replicating the UI and basic functionality using HTML, CSS, and JavaScript with responsive design principles.",
       image: "/AmazonClone.png",
-      tags: ["HTML", "CSS", "JavaScript"],
+      tags: ["HTML", "CSS", "JavaScript", "Responsive Design"],
       github: "https://github.com/rroyalpradeep/amazon-clone",
       demo: "https://rroyalpradeep.github.io/Amazon-Clone/",
     },
     {
       title: "Project Clock",
       description:
-        "Designed and developed a responsive web application that dynamically displays the current time in both an elegant analog clock and a digital format. Ensured seamless real-time updates with smooth transitions.",
+        "A responsive web application that dynamically displays the current time in both elegant analog and digital formats with seamless real-time updates and smooth transitions.",
       image: "/Clock.png",
-      tags: ["HTML", "CSS", "JavaScript"],
+      tags: ["HTML", "CSS", "JavaScript", "Real-time Updates"],
       github: "https://github.com/rroyalpradeep/Clock",
       demo: "https://rroyalpradeep.github.io/Clock/",
     },
     {
       title: "Rock Paper Scissors",
       description:
-        "Developed an interactive web application where users can play the classic Rock, Paper, Scissors game against the computer with a real-time scoring system and both light and dark mode options.",
+        "An interactive web application for playing the classic Rock, Paper, Scissors game against the computer with a real-time scoring system and both light and dark mode options.",
       image: "/RPS.png",
-      tags: ["HTML", "CSS", "JavaScript"],
+      tags: ["HTML", "CSS", "JavaScript", "Game Logic", "Dark Mode"],
       github: "https://github.com/rroyalpradeep/Rock-Paper-Scissor",
       demo: "https://rroyalpradeep.github.io/Rock-Paper-Scissor/",
     },
-    {
-      title: "Personal Portfolio",
-      description:
-        "A responsive portfolio website showcasing projects, skills, and professional achievements with a modern design and smooth user experience.",
-      image: "/Portfolio.png",
-      tags: ["React", "Tailwind CSS", "JavaScript", "Next"],
-      github: "https://github.com/rroyalpradeep/Portfolio",
-      demo: "https://rroyalpradeep.github.io/Portfolio/",
-    },
-
   ]
 
   return (
@@ -91,7 +90,8 @@ export default function Projects() {
           </h2>
           <div className="w-20 h-1 bg-primary mx-auto mb-6"></div>
           <p className="text-gray-300 max-w-2xl mx-auto">
-            Here are some of the projects I've worked on, showcasing my skills and experience in web development.
+            Here are some of the projects I've worked on, showcasing my skills and experience in web development, 
+            mobile app development, and backend systems.
           </p>
         </div>
 
@@ -114,7 +114,7 @@ export default function Projects() {
 function ProjectCard({ project }: { project: any }) {
   return (
     <Card className="bg-background/40 dark:bg-black/40 border-primary/20 hover:border-primary transition-all duration-300 overflow-hidden group">
-      <div className="relative h-96 overflow-hidden">
+      <div className="relative h-48 overflow-hidden">
         <Image
           src={project.image || "/placeholder.svg"}
           alt={project.title}
@@ -157,4 +157,3 @@ function ProjectCard({ project }: { project: any }) {
     </Card>
   )
 }
-
