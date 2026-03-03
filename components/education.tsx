@@ -28,8 +28,8 @@ export default function Education() {
                 organization="Lloyd Institute of Engineering And Technology"
                 period="2022 - 2026 (Expected)"
                 description="Computer Science and Engineering (AI & ML)"
-                details={[
-                  "GPA: 7.7",
+details={[
+                  "GPA: 8.0 CGPA",
                   "Courses: Operating Systems, System Design, Data Structures, Database Management System, Object Oriented Programming",
                 ]}
               />

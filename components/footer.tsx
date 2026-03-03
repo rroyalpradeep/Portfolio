@@ -19,11 +19,12 @@ export default function Footer() {
               Pradeep <span className="text-primary-foreground">Soni</span>
             </div>
           </div>
-          <ul className="flex flex-wrap justify-center gap-6 mb-8">
+<ul className="flex flex-wrap justify-center gap-6 mb-8">
             <FooterLink href="#home">Home</FooterLink>
             <FooterLink href="#about">About</FooterLink>
             <FooterLink href="#skills">Skills</FooterLink>
             <FooterLink href="#projects">Projects</FooterLink>
+            <FooterLink href="#experience">Experience</FooterLink>
             <FooterLink href="#education">Education</FooterLink>
             <FooterLink href="#contact">Contact</FooterLink>
           </ul>
