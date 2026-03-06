@@ -80,7 +80,7 @@ const roles = ["FULL STACK DEVELOPER", "BACKEND ENGINEER", "PROBLEM SOLVER"]
               <a href="mailto:pradeepsoniofficial@gmail.com">
                 <Button className="bg-primary hover:bg-primary/80 text-primary-foreground px-8 py-6 text-lg">Hire Me</Button>
               </a>
-              <a href="/resume" target="_blank" rel="noopener noreferrer">
+              <a href="https://rroyalpradeep.github.io/Resume/" target="_blank" rel="noopener noreferrer">
                 <Button variant="outline" className="border-primary text-primary hover:bg-primary/10 px-8 py-6 text-lg">
                   View Resume
                 </Button>
